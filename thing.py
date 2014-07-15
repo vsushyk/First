@@ -9,5 +9,5 @@ def new(__init__):
 first_name = "Vlad";
 last_name = "Sushyk";
 print ("%s" + " " + "%s") % (first_name, last_name);
-print "My name is %s" % first_name;
+print "My name is %s %s" % first_name, last_name;
 
