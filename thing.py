@@ -1,13 +1,14 @@
-def my_func():
-	first_name = "Volodymyr";
-	last_name = "Sushyk";
-	print ("%s" + " " + "%s") % (first_name, last_name);
+class Person():
+  def __init__(self, first_name, last_name):
+    self.first_name = first_name
+    self.last_name = last_name
+    
+  def print_name(self):
+    print ("%s" + " " + "%s") % (self.first_name, self.last_name)
 
-def new(__init__):
-	func = my_func();
+  def special_message(self):
+    print ("This is a special message")       
 
-first_name = "Vlad";
-last_name = "Sushyk";
-print ("%s" + " " + "%s") % (first_name, last_name);
-print "My name is %s %s" % (first_name, last_name);
-
+c = Person("Nazario", "Ayala")
+c.print_name()
+c.special_message()
